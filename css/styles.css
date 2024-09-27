@@ -70,6 +70,7 @@ button {
     margin: -1px;
     border: 0;
     padding: 0;
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -77,8 +78,22 @@ button {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 156px;
+    }
 }
 
 .social-link-team,
@@ -284,24 +299,48 @@ fill: #2e2f42;
 .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/general/people-office.jpg);
             background-repeat: no-repeat;
-            max-width: 1440px;
+            max-width: 320px;
             background-position: center;
             background-size: cover;
             padding: 188px 0;
             margin: 0 auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {max-width: 1199.98px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+        max-width: 1200px;
+  }
+}
+
 .hero-text-primary {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-white-background);
-    max-width: 496px;
+    max-width: 216px;
     margin: 0 auto 48px;
+}
 
-    max-width: 496px;
+@media only screen and (min-width: 768px) {
+    .hero-text-primary {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-text-primary {
+        max-width: 496px;
+    }
 }
 
 .hero-btn {
@@ -335,27 +374,55 @@ fill: #2e2f42;
 /* #region info */
 
 .info-container {
-    max-width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
+/* @media only screen and (min-width: 768px) {
+    .hero-text-primary {
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-text-primary {
+    }
+} */
+
+.info {
+    padding: 96px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    .info {
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .info {
+    padding: 120px 0px;
+    }
+} 
 
 .info-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-
+    justify-content: center;
 }
 
 .info-list-item {
-    width: calc((100% - 72px) / 4)
+    max-width: 356px;
 }
 
-.info {
-    padding: 120px 0px;
+@media only screen and (min-width: 1200px) {
+    .info-list-item {
+        max-width: 264px;
+    }
 }
+
+/* width: calc((100% - 72px) / 4) */
 
 .info-icon-wrapper {
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,37 +433,57 @@ fill: #2e2f42;
     height: 112px;
 }
 
+@media only screen and (min-width: 768px) {
+    .info-icon-wrapper {
+    
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .info-icon-wrapper {
+            opacity: 1;
+    }
+}
+
 .info-text-secondary {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--color-primary-dark);
-    margin-bottom: 8px
+
+    margin: 8px auto;
     
 }
 
+@media only screen and (min-width: 1200px) {
+    .info-text-secondary {
+    text-align: left;    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1,2;
+    letter-spacing: 0.02em;
+    }
+}
+
 .info-text-tertiary {
+    max-width: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 356px;
     color: var(--color-text-primary);
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+@media only screen and (min-width: 1200px) {
+    .info-text-tertiary {
+    /* width: calc((100% - 72px) / 4) */
+    }
 }
+
+
 
 /* #endregion */
 
@@ -640,10 +727,6 @@ border-top: none;
     margin: 0;
 }
 
-.form-container {
-    margin-top: 32px;
-}
-
 .form-subscribe-text {
     margin-bottom: 16px;
     font-weight: 500;
@@ -706,7 +789,7 @@ border-top: none;
 
 /* #endregion */
 
-/* #modal window */
+/* #region modal */
 
     .modal-overlay {
     position: fixed;
