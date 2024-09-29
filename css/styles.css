@@ -60,7 +60,6 @@ img {
 
 button {
     font-family: inherit;
-    color: activeColor;
 }
 
 .visually-hidden {
@@ -114,27 +113,27 @@ button {
 }
 
 .social-link-footer:active {
-    background-color: var(--color-success)
+    background-color: var(--color-success);
 }
 
 @media only screen and (min-width: 1158px) {
     .social-link-footer:hover,
     .social-link-footer:focus {
-        background-color: var(--color-success)
+        background-color: var(--color-success);
     }
 }
 
 .social-link-team:active {
-    background-color: var(--color-primary-state)
+    background-color: var(--color-primary-state);
 }
 
-@media only screen and (min-width: 1158px) {
+/* @media only screen and (min-width: 1158px) {
 
-    .social-link-footer:hover,
-    .social-link-footer:focus {
-        background-color: var(--color-primary-state)
+    .social-link-team:hover,
+    .social-link-team:focus {
+        background-color: var(--color-primary-state);
     }
-}
+} */
 
 /* #endregion */
 
@@ -533,7 +532,6 @@ fill: #2e2f42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1,2;
-    letter-spacing: 0.02em;
     }
 }
 
@@ -1327,7 +1325,7 @@ text-align: center;
     top: 24px;
     right: 24px;
 
-    color: rgb(var(--color-primary-dark));
+    color: var(--color-primary-dark);
     border: 1px solid var(--color-accent);
     border-radius: 50%;
 }
