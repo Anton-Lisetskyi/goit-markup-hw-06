@@ -200,6 +200,13 @@ fill: #2e2f42;
     border-bottom: 1px solid var(--color-accent);
 }
 
+@media only screen and (max-width: 767.98px) {
+    .header-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    }
+}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -374,7 +381,7 @@ fill: #2e2f42;
   }
 }
 
-@media only screen and (min-width: 768px), only screen and (min-resolution: 96dpi)  {
+@media only screen and (min-width: 768px), only screen and (min-resolution: 160dpi)  {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/general/people-office\ 1@2x.jpg);
