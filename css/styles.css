@@ -366,7 +366,7 @@ fill: #2e2f42;
 /* #region hero */
 
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/general/people-office\ 1@1x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/general/people-office1@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -384,7 +384,7 @@ fill: #2e2f42;
 @media only screen and (min-width: 768px), only screen and (min-resolution: 160dpi)  {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/general/people-office\ 1@2x.jpg);
+            url(../images/general/people-office1@2x.jpg);
     }
 }
 
